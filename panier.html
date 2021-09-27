@@ -4,12 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Panier</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link 
+<link rel="stylesheet" href="panierpage.css">
 </head>
 <body>
 
-<h2>Responsive Checkout Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<h2>Paiement</h2>
+<p>Merci pour vos achats</p>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -18,41 +18,34 @@
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <label for="fname"><i class="fa fa-user"></i> Nom Prénom</label>
             <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+            <input type="text" id="adr" name="address" placeholder="54 rue Victor Hugo">
+            <label for="city"><i class="fa fa-institution"></i> Ville</label>
+            <input type="text" id="city" name="city" placeholder="Lyon">
 
             <div class="row">
               <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
+                <label for="zip"> Code postal</label>
+                <input type="text" id="zip" name="zip" placeholder="69004">
               </div>
             </div>
           </div>
 
           <div class="col-50">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label for="cname">Name on Card</label>
+            <h3>Paiement</h3>
+            <label for="cname">Nom sur la carte</label>
             <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
+            <label for="ccnum">Numero de carte de crédit</label>
             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
+            <label for="expmonth">Mois d'expiration</label>
             <input type="text" id="expmonth" name="expmonth" placeholder="September">
             <div class="row">
               <div class="col-50">
-                <label for="expyear">Exp Year</label>
+                <label for="expyear">Année d'expiration</label>
                 <input type="text" id="expyear" name="expyear" placeholder="2018">
               </div>
               <div class="col-50">
@@ -64,9 +57,9 @@
           
         </div>
         <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          <input type="checkbox" checked="checked" name="sameadr"> Adresse de facturation identique à celle de livraison
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Confirmer" class="btn">
       </form>
     </div>
   </div>
